@@ -1,9 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, Flatlist, View } from 'react-native'
-import { icon } from 'react-native-elements'
+import { Text, TouchableOpacity, FlatList, View } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon';
 import tw from 'tailwind-react-native-classnames';
-
 
 const data = [
   {
@@ -22,7 +20,7 @@ const data = [
 
 const NavFavourites = () => {
   return (
-    <Flatlist 
+    <FlatList 
       data={data}
       keyExtractor={(item) => item.id}
       ItemSeperatorComponent={() => (
@@ -33,8 +31,8 @@ const NavFavourites = () => {
           <Icon 
             style={tw`mr-4 rounded-full bg-gray-300 p-3`}
             name={icon}
-            type={"ionicon"}
-            color={"white"}
+            type="ionicon"
+            color="white"
             size={18}
           />
           <View>
@@ -44,9 +42,8 @@ const NavFavourites = () => {
         </TouchableOpacity>
       )}
     />
-  )
-}
+  );
+};
 
 export default NavFavourites
 
-const styles = StyleSheet.create({})

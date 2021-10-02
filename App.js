@@ -24,24 +24,27 @@ export default function App() {
             behavior={Platform.OS === 'android' ? "height" : "padding"}
             style={tw`flex-1`}>
             <Stack.Navigator>
-              <Stack.Screen name="HomeScreen" 
+              <Stack.Screen 
+                name="HomeScreen" 
                 component={HomeScreen} 
                 options={{
                   headerShown: false, 
                 }}
               />
-              <Stack.Screen name="MapScreen" 
+              <Stack.Screen 
+                name="MapScreen" 
                 component={MapScreen} 
                 options={{
                   headerShown: false, 
                 }}
               />
-              <Stack.Screen name="EatsScreen" 
+              {/*<Stack.Screen 
+                name="EatsScreen" 
                 component={EatsScreen} 
                 options={{
                   headerShown: false, 
                 }}
-              />
+              />*/}
             </Stack.Navigator>
           </KeyboardAvoidingView>
         </SafeAreaProvider>

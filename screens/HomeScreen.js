@@ -56,8 +56,6 @@ const HomeScreen = () => {
             debounce={400}
           />
           <NavOptions/>
-          
-          {/* TODO: Fix this problem. Can't find NavFavorites. */}
           <NavFavourites/>
       </View>
     </SafeAreaView>
@@ -66,8 +64,3 @@ const HomeScreen = () => {
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({
-  text: {
-    color: "blue"
-  }
-})

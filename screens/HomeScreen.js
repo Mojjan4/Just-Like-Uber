@@ -9,8 +9,7 @@ import { setDestination, setOrigin } from '../slices/navSlice';
 import NavFavourites from '../components/NavFavourites';
 
 const HomeScreen = () => {
-const dispatch = useDispatch();
-
+  const dispatch = useDispatch();
 
   return (
     <SafeAreaView style={tw`bg-white h-full`}> 
@@ -56,16 +55,16 @@ const dispatch = useDispatch();
             nearbyPlacesAPI="GooglePlacesSearch"
             debounce={400}
           />
+          <NavOptions/>
           
-          <NavOptions />
-          <NavFavourites />
+          {/* TODO: Fix this problem. Can't find NavFavorites. */}
+          <NavFavourites/>
       </View>
     </SafeAreaView>
-   
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   text: {

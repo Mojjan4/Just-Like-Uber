@@ -1,11 +1,14 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import tw from 'tailwind-react-native-classnames'
 
 const EatsScreen = () => {
   return (
-    <View>
-      <Text>EatScreen</Text>
-    </View>
+    <SafeAreaView style={tw`bg-white h-full`}>
+      <View style={tw`p-2`}>
+        <Text>Eatstuff here</Text>
+      </View>
+    </SafeAreaView>
   )
 }
 
